@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = '気温は40度で外はとても暑かった。,:insertx: は外を散歩していた。彼は:inserty:へ行きたくなり、遊びに行った。そして、:insertz:。体重100kgのボブは驚いたが、:insertX:は驚かなかった。’;
+let storyText = '気温は40度で外はとても暑かった,:insertx: は外を散歩していた,彼は:inserty:へ行きたくなり、遊びに行った,そして、:insertz:,体重100kgのボブは驚いたが、:insertX:は驚かなかった,’;
 let insertX = ['ミッキー','スヌーピー','ハローキティ'];
 let insertY = ['ユニバーサルスタジオジャパン','ディズニーランド','サンリオピューロランド'];
 let insertZ = ['宇宙人が現れた。','スーパーマンが空を飛んでいた。','小人が走っていた'];
