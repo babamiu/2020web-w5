@@ -8,9 +8,9 @@ function randomValueFromArray(array){
 }
 
 let storyText = '今日は華氏１度で外は寒かった。:insertx:は出かけた。:inserty:に着いた。:insertz:体重50ポンドの:insertx:は驚いたが、梅子は驚かなかった。:inserty:ではよくあることだった。';
-let insertX = ['スヌーピー','ミッキー','マイメロ'];
-let insertY = ['ディズニーランド','USJ','東京タワー'];
-let insertZ = ['雀がたくさん飛んでいた。','空からチョコレートが降ってきた。','生の大根をかじっている人がいた。'];
+let insertX = ['プーさん','エルモ','ハローキティ'];
+let insertY = ['ディズニーランド','ユニバーサルスタジオジャパン','サンリオピューロランド'];
+let insertZ = ['宇宙人が現れた。','猫が日本語を話した。','小人が走っていた。'];
 
 randomize.addEventListener('click', result);
 
