@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = '今日は華氏１度で外はとても寒かった。:insertx:は外を歩いていた。彼は突然:inserty:に行きたくなり、遊びに行った。:insertz:体重50ポンドの:insertx:は驚いたが、梅子は驚かなかった。:inserty:ではよくあることだった。';
+let storyText = '今日は華氏１度で外はとても寒かった。:insertx:は外を歩いていた。彼は突然:inserty:に行きたくなり、遊びに行った。:insertz:体重50ポンドの:insertx:は驚いたが、梅ちゃんは驚かなかった。:inserty:ではよくあることだったからだ。';
 let insertX = ['プーさん','エルモ','ハローキティ'];
 let insertY = ['ディズニーランド','ユニバーサルスタジオジャパン','サンリオピューロランド'];
 let insertZ = ['宇宙人が現れた。','猫が日本語を話した。','小人が走っていた。'];
@@ -27,7 +27,7 @@ function result() {
 
   if(customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('梅子',name);
+    newStory = newStory.replace('梅ちゃん',name);
   }
 
   if(document.getElementById("ja").checked) {
