@@ -7,10 +7,10 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText　='今日は華氏１度で外は寒かった。:insertx:は出かけた。:inserty:に着いた。:insertz:体重50ポンドの:insertx:は驚いたが、梅子は驚かなかった。:inserty:ではよくあることだった。';
-let insertX = ['ミッキー','スヌーピー','ハローキティ'];
-let insertY = ['ユニバーサルスタジオジャパン','ディズニーランド','サンリオピューロランド'];
-let insertZ = ['宇宙人が現れた。','スーパーマンが空を飛んでいた。','小人が走っていた'];
+let storyText = '今日は華氏１度で外は寒かった。:insertx:は出かけた。:inserty:に着いた。:insertz:体重50ポンドの:insertx:は驚いたが、梅子は驚かなかった。:inserty:ではよくあることだった。';
+let insertX = ['スヌーピー','ミッキー','マイメロ'];
+let insertY = ['ディズニーランド','USJ','東京タワー'];
+let insertZ = ['雀がたくさん飛んでいた。','空からチョコレートが降ってきた。','生の大根をかじっている人がいた。'];
 
 randomize.addEventListener('click', result);
 
@@ -21,19 +21,19 @@ function result() {
   let yItem = randomValueFromArray(insertY);
   let zItem = randomValueFromArray(insertZ);
 
-  newStory = newStory.replace(':insertx:',xItem);
-  newStory = newStory.replace(':inserty:',yItem);
-  newStory = newStory.replace(':insertz:',zItem);
+  newStory = newStory.replaceAll(':insertx:',xItem);
+  newStory = newStory.replaceAll(':inserty:',yItem);
+  newStory = newStory.replaceAll(':insertz:',zItem);
 
   if(customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('梅',name);
+    newStory = newStory.replace('梅子',name);
   }
 
   if(document.getElementById("ja").checked) {
-    const weight = Math.round((94-32)*5/9)+'kg';
+    const weight = Math.round((94-32) * 5 / 9) + 'kg';
     const temperature =  '摂氏'+Math.round(300*0.0714286);
-    newStory = newStory.replace('華氏1',temperature);
+    newStory = newStory.replace('華氏１',temperature);
     newStory = newStory.replace('50ポンド',weight);
   }
 
