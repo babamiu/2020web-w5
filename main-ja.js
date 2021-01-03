@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = '気温は40度で外はとても暑かった。,:insertx: は外を散歩していた。彼は:inserty:へ行きたくなり、遊びに行った。';
+let storyText = '気温は40度で外はとても暑かった。,:insertx: は外を散歩していた。彼は:inserty:へ行きたくなり、遊びに行った。宇宙人が現われた。体重100kgのボブは驚いたが、:insertX:は驚かなかった。;
 let insertX = ['ミッキー','スヌーピー','ハローキティ'];
 let insertY = ['ユニバーサルスタジオジャパン','ディズニーランド','サンリオピューロランド'];
 let insertZ = ['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
@@ -28,7 +28,7 @@ function result() {
 
   if(customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('Bob',name);
+    newStory = newStory.replace('ボブ',name);
   }
 
   if(document.getElementById("uk").checked) {
